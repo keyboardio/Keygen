@@ -1,0 +1,2 @@
+rm -rf atreus-pcb; ./layout.pl --usb=micro --key-spacing=19 --project=atreus-pcb --layout=kle-layouts/straight-atreus-for-pcb-generation.json; 
+#cd atreus; kicad atreus.pro ; cd ..

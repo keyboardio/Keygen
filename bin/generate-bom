@@ -1,0 +1,32 @@
+#!/bin/sh
+
+BOARD=$1
+DIR=$2
+
+
+
+eeschema $BOARD.sch &
+MYPID=$!
+echo $MYPID
+WINDOWID=`xdotool search --onlyvisible  --pid $MYPID`
+xdotool windowfocus $WINDOWID
+sleep 5;
+xdotool key alt+t m
+ sleep 1 
+ xdotool key Tab
+ xdotool key Tab
+ xdotool key Tab
+ xdotool key Tab
+ xdotool key Tab
+ xdotool key Tab
+	sleep 1;
+ xdotool type "xsltproc -o \"$DIR/bom.csv\" \"/usr/share/kicad/plugins/bom2grouped_csv.xsl\" \"%I\""
+ 
+# xdotool key Tab
+# xdotool key RArrow
+# xdotool key RArrow
+ xdotool key Return
+	sleep 3;
+ xdotool key Tab
+ xdotool key Escape
+ xdotool key ctrl+q;

@@ -1,0 +1,2154 @@
+EESchema Schematic File Version 5
+LIBS:kicad-template-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2350 2900 2350 2300
+Connection ~ 2350 1750
+Wire Wire Line
+	2950 2150 2950 2300
+Connection ~ 2350 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FAECA
+P 2550 2700
+F 0 "#PWR?" H 2550 2700 30  0001 C CNN
+F 1 "VSS" H 2550 2630 30  0000 C CNN
+F 2 "" H 2550 2700 60  0000 C CNN
+F 3 "" H 2550 2700 60  0001 C CNN
+	1    2550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FAED0
+P 2850 2150
+F 0 "#PWR?" H 2850 2150 30  0001 C CNN
+F 1 "VSS" H 2850 2080 30  0000 C CNN
+F 2 "" H 2850 2150 60  0000 C CNN
+F 3 "" H 2850 2150 60  0001 C CNN
+	1    2850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FAED6
+P 2550 2150
+F 0 "#PWR?" H 2550 2150 30  0001 C CNN
+F 1 "VSS" H 2550 2080 30  0000 C CNN
+F 2 "" H 2550 2150 60  0000 C CNN
+F 3 "" H 2550 2150 60  0001 C CNN
+	1    2550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FAEDC
+P 2850 2700
+F 0 "#PWR?" H 2850 2700 30  0001 C CNN
+F 1 "VSS" H 2850 2630 30  0000 C CNN
+F 2 "" H 2850 2700 60  0000 C CNN
+F 3 "" H 2850 2700 60  0001 C CNN
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5B5FAEE5
+P 2900 4600
+F 0 "R10" V 2980 4600 40  0000 C CNN
+F 1 "10K" V 2907 4601 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4600 30  0001 C CNN
+F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 2900 4600 30  0001 C CNN
+F 4 "RR0816P-103-D" V 2900 4600 50  0001 C CNN "MPN"
+F 5 "RES SMD 10K OHM 0.5% 1/16W 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "RR08P10.0KDTR-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Susumu" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "RK73H1JTTD1002F" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    2900 4600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3400 4850 2900 4850
+Wire Wire Line
+	2900 4850 2900 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FAEEE
+P 2900 5050
+F 0 "#PWR?" H 2900 5050 30  0001 C CNN
+F 1 "VSS" H 2900 4980 30  0000 C CNN
+F 2 "" H 2900 5050 60  0000 C CNN
+F 3 "" H 2900 5050 60  0001 C CNN
+	1    2900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FAEFB
+P 1400 3350
+F 0 "#PWR?" H 1400 3350 30  0001 C CNN
+F 1 "VSS" H 1400 3280 30  0000 C CNN
+F 2 "" H 1400 3350 60  0000 C CNN
+F 3 "" H 1400 3350 60  0001 C CNN
+	1    1400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FAF01
+P 1050 3350
+F 0 "#PWR?" H 1050 3350 30  0001 C CNN
+F 1 "VSS" H 1050 3280 30  0000 C CNN
+F 2 "" H 1050 3350 60  0000 C CNN
+F 3 "" H 1050 3350 60  0001 C CNN
+	1    1050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1750 2350 1300
+Wire Wire Line
+	2350 2300 2350 1750
+Wire Wire Line
+	2350 2900 3100 2900
+Wire Wire Line
+	3500 2450 3100 2450
+Wire Wire Line
+	3100 2450 3100 2900
+Wire Wire Line
+	3400 4550 3500 4550
+Wire Wire Line
+	3400 4550 3400 4850
+Connection ~ 3400 4850
+Wire Wire Line
+	3500 5050 3400 5050
+Wire Wire Line
+	3400 5050 3400 4850
+Wire Wire Line
+	3500 5250 3400 5250
+Wire Wire Line
+	3400 5250 3400 5050
+Connection ~ 3400 5050
+Wire Wire Line
+	3400 4850 3500 4850
+Wire Wire Line
+	2900 4300 3500 4300
+Wire Wire Line
+	2650 3350 2750 3350
+Wire Wire Line
+	2650 3500 3200 3500
+$Comp
+L Device:R R8
+U 1 1 5B5FB1BA
+P 2750 3850
+F 0 "R8" V 2830 3850 50  0000 C CNN
+F 1 "100K" V 2750 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 3850 60  0001 C CNN
+F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 2750 3850 60  0001 C CNN
+F 4 "RR0816P-104-D" V 2750 3850 50  0001 C CNN "MPN"
+F 5 "RES SMD 100K OHM 0.5% 1/16W 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "RR08P100KDTR-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Susumu" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100KL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    2750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5B5FB1C4
+P 2900 3850
+F 0 "R9" V 2980 3850 40  0000 C CNN
+F 1 "1K" V 2907 3851 40  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 2830 3850 30  0001 C CNN
+F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 2900 3850 30  0001 C CNN
+F 4 "RR0816P-102-D" V 2900 3850 50  0001 C CNN "MPN"
+F 5 "RES SMD 1K OHM 0.5% 1/16W 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "RR08P1.0KDTR-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Susumu" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-071KL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    2900 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5B5FB1CE
+P 3050 3850
+F 0 "R11" V 3130 3850 40  0000 C CNN
+F 1 "1K" V 3057 3851 40  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 2980 3850 30  0001 C CNN
+F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 3050 3850 30  0001 C CNN
+F 4 "RR0816P-102-D" V 3050 3850 50  0001 C CNN "MPN"
+F 5 "RES SMD 1K OHM 0.5% 1/16W 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "RR08P1.0KDTR-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Susumu" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-071KL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    3050 3850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2650 3050 2900 3050
+Connection ~ 2900 3050
+Connection ~ 2750 3350
+Wire Wire Line
+	2750 3350 3500 3350
+$Comp
+L Device:R R12
+U 1 1 5B5FB1E7
+P 3200 3850
+F 0 "R12" V 3280 3850 40  0000 C CNN
+F 1 "100K" V 3207 3851 40  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 3130 3850 30  0001 C CNN
+F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 3200 3850 30  0001 C CNN
+F 4 "RR0816P-104-D" V 3200 3850 50  0001 C CNN "MPN"
+F 5 "RES SMD 100K OHM 0.5% 1/16W 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "RR08P100KDTR-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Susumu" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100KL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    3200 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5B5FB1F1
+P 3400 3850
+F 0 "C20" H 3400 3950 40  0000 L CNN
+F 1 "0.1uF" H 3406 3765 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3250 3900 30  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 3400 3850 60  0001 C CNN
+F 4 "CC0603ZRY5V7BB104" H 3400 3850 50  0001 C CNN "MPN"
+F 5 "CAP CER 0.1UF 16V Y5V 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "311-1369-1-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "CC0603ZRY5V8BB104" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    3400 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 3500
+Wire Wire Line
+	3200 3500 3400 3500
+Connection ~ 3400 3500
+Wire Wire Line
+	3400 3500 3500 3500
+Wire Wire Line
+	3400 4100 3300 4100
+Connection ~ 3300 4100
+Wire Wire Line
+	3300 4100 3200 4100
+Text GLabel 2650 3050 0    61   Input ~ 0
+SDA
+Text GLabel 2650 3200 0    61   Input ~ 0
+SCL
+Text GLabel 2650 3350 0    61   Input ~ 0
+LED_DRIVER_INTB
+Text GLabel 2650 3500 0    61   Input ~ 0
+LED_DRIVER_SDB
+$Comp
+L Device:C_Small C15
+U 1 1 5B5FB20A
+P 1400 3100
+F 0 "C15" H 1400 3200 40  0000 L CNN
+F 1 "0.1uF" H 1406 3015 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1250 3150 30  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 1400 3100 60  0001 C CNN
+F 4 "CC0603ZRY5V7BB104" H 1400 3100 50  0001 C CNN "MPN"
+F 5 "CAP CER 0.1UF 16V Y5V 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "311-1369-1-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "CC0603ZRY5V8BB104" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    1400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5B5FB217
+P 2850 2500
+F 0 "C19" H 2850 2600 40  0000 L CNN
+F 1 "0.1uF" H 2856 2415 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 2550 30  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 2850 2500 60  0001 C CNN
+F 4 "CC0603ZRY5V7BB104" H 2850 2500 50  0001 C CNN "MPN"
+F 5 "CAP CER 0.1UF 16V Y5V 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "311-1369-1-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "CC0603ZRY5V8BB104" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    2850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 5B5FB223
+P 2850 1950
+F 0 "C18" H 2850 2050 40  0000 L CNN
+F 1 "0.1uF" H 2856 1865 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 2000 30  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 2850 1950 60  0001 C CNN
+F 4 "CC0603ZRY5V7BB104" H 2850 1950 50  0001 C CNN "MPN"
+F 5 "CAP CER 0.1UF 16V Y5V 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "311-1369-1-ND" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "CC0603ZRY5V8BB104" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    2850 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 1750
+Wire Wire Line
+	2850 1750 3500 1750
+$Comp
+L Device:C_Small C14
+U 1 1 5B5FB22F
+P 1050 3100
+F 0 "C14" H 1050 3200 40  0000 L CNN
+F 1 "1uF 10V X5R 10%" H 1056 3015 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1088 2950 30  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X5R_4V-to-50V_25.pdf" H 1050 3100 60  0001 C CNN
+F 4 "CC0603KRX5R6BB105" H 1050 3100 50  0001 C CNN "MPN"
+F 5 "CAP CER 1UF 10V X5R 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "311-1443-2-ND	" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Yageo" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "GRM188R61A105KA61D	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    1050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Keyboard-symbols:IS31LF3741_IS31FL3741 U2
+U 1 1 5B5FB239
+P 4550 3700
+F 0 "U2" H 4500 6037 60  0000 C CNN
+F 1 "IS31FL3741" H 4500 5931 60  0000 C CNN
+F 2 "Keyboardio:QFN-60_EP_7x7_Pitch0.4mm" H 4550 3700 60  0001 C CNN
+F 3 "http://ams.issi.com/WW/pdf/IS31FL3741.pdf" H 4550 3700 60  0001 C CNN
+F 4 "IS31FL3741-QFLS4-TR" H 4550 3700 50  0001 C CNN "MPN"
+F 5 "IC LED DVR 39X9 DOT MATRIX 60QFN" H -1350 -300 50  0001 C CNN "Description"
+F 6 "ISSI" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 7 "706-1662-1-ND" H 0   0   50  0001 C CNN "DigiKey"
+	1    4550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5B5FB245
+P 2550 2500
+F 0 "C17" H 2550 2600 40  0000 L CNN
+F 1 "1uF 10V X5R 10%" H 2556 2415 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 2350 30  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X5R_4V-to-50V_25.pdf" H 2550 2500 60  0001 C CNN
+F 4 "CC0603KRX5R6BB105" H 2550 2500 50  0001 C CNN "MPN"
+F 5 "CAP CER 1UF 10V X5R 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "311-1443-2-ND	" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Yageo" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "GRM188R61A105KA61D	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    2550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5B5FB251
+P 2550 1950
+F 0 "C16" H 2550 2050 40  0000 L CNN
+F 1 "1uF 10V X5R 10%" H 2556 1865 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 1800 30  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X5R_4V-to-50V_25.pdf" H 2550 1950 60  0001 C CNN
+F 4 "CC0603KRX5R6BB105" H 2550 1950 50  0001 C CNN "MPN"
+F 5 "CAP CER 1UF 10V X5R 0603" H -1350 -300 50  0001 C CNN "Description"
+F 6 "311-1443-2-ND	" H -1350 -300 50  0001 C CNN "DigiKey"
+F 7 "Yageo" H -1350 -300 50  0001 C CNN "Manufacturer"
+F 8 "GRM188R61A105KA61D	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    2550 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2500 5750 2500
+Wire Wire Line
+	5500 2400 6075 2400
+Wire Wire Line
+	5500 2300 5750 2300
+Wire Wire Line
+	5500 2200 6075 2200
+Wire Wire Line
+	5500 2100 5750 2100
+Wire Wire Line
+	5500 2000 6075 2000
+Wire Wire Line
+	5500 1900 5750 1900
+Wire Wire Line
+	5500 1800 6075 1800
+Text GLabel 5750 2500 2    61   Input ~ 0
+LED_SW_1
+Text GLabel 6075 2400 2    61   Input ~ 0
+LED_SW_2
+Text GLabel 5750 2300 2    61   Input ~ 0
+LED_SW_3
+Text GLabel 6075 2200 2    61   Input ~ 0
+LED_SW_4
+Text GLabel 5750 2100 2    61   Input ~ 0
+LED_SW_5
+Text GLabel 6075 2000 2    61   Input ~ 0
+LED_SW_6
+Text GLabel 5750 1900 2    61   Input ~ 0
+LED_SW_7
+Text GLabel 6075 1800 2    61   Input ~ 0
+LED_SW_8
+Text GLabel 10100 3325 2    61   Input ~ 0
+LED_CS_1_B
+Text GLabel 10100 3025 2    61   Input ~ 0
+LED_CS_2_B
+Text GLabel 10100 2725 2    61   Input ~ 0
+LED_CS_3_B
+Text GLabel 10100 6025 2    61   Input ~ 0
+LED_CS_4_B
+Text GLabel 10100 2425 2    61   Input ~ 0
+LED_CS_5_B
+Text GLabel 10100 4225 2    61   Input ~ 0
+LED_CS_6_B
+Text GLabel 10100 3925 2    61   Input ~ 0
+LED_CS_7_B
+Text GLabel 10100 3625 2    61   Input ~ 0
+LED_CS_8_B
+Text GLabel 10100 5725 2    61   Input ~ 0
+LED_CS_9_B
+Text GLabel 10100 4825 2    61   Input ~ 0
+LED_CS_11_B
+Text GLabel 10100 5125 2    61   Input ~ 0
+LED_CS_12_B
+Text GLabel 10100 5425 2    61   Input ~ 0
+LED_CS_13_B
+Wire Wire Line
+	5500 6700 6000 6700
+Wire Wire Line
+	5500 6600 6000 6600
+Wire Wire Line
+	5500 6500 6000 6500
+Wire Wire Line
+	5500 6400 6000 6400
+Wire Wire Line
+	5500 6300 6000 6300
+Wire Wire Line
+	5500 6200 6000 6200
+Wire Wire Line
+	5500 6100 6000 6100
+Wire Wire Line
+	5500 6000 6000 6000
+Wire Wire Line
+	5500 5900 6000 5900
+Wire Wire Line
+	5500 5800 6000 5800
+Wire Wire Line
+	5500 5700 6000 5700
+Wire Wire Line
+	5500 5600 6000 5600
+Wire Wire Line
+	5500 5500 6000 5500
+Wire Wire Line
+	5500 5400 6000 5400
+Wire Wire Line
+	5500 5300 6000 5300
+Wire Wire Line
+	5500 5200 6000 5200
+Wire Wire Line
+	5500 5100 6000 5100
+Wire Wire Line
+	5500 5000 6000 5000
+Wire Wire Line
+	5500 4900 6000 4900
+Wire Wire Line
+	5500 4800 6000 4800
+Wire Wire Line
+	5500 4600 6000 4600
+Wire Wire Line
+	5500 4700 6000 4700
+Wire Wire Line
+	5500 4500 6000 4500
+Wire Wire Line
+	5500 4400 6000 4400
+Wire Wire Line
+	5500 4300 6000 4300
+Wire Wire Line
+	5500 4200 6000 4200
+Wire Wire Line
+	5500 4100 6000 4100
+Wire Wire Line
+	5500 4000 6000 4000
+Wire Wire Line
+	5500 3900 6000 3900
+Wire Wire Line
+	5500 3800 6000 3800
+Wire Wire Line
+	5500 3700 6000 3700
+Wire Wire Line
+	5500 3600 6000 3600
+Wire Wire Line
+	5500 3500 6000 3500
+Wire Wire Line
+	5500 3400 6000 3400
+Wire Wire Line
+	5500 3300 6000 3300
+Wire Wire Line
+	5500 3200 6000 3200
+Wire Wire Line
+	5500 3100 6000 3100
+Wire Wire Line
+	5500 3000 6000 3000
+Wire Wire Line
+	5500 2900 6000 2900
+Text Notes 4200 1050 0    157  ~ 31
+LED DRIVER\n\n
+Wire Wire Line
+	2950 2150 3500 2150
+Wire Wire Line
+	3500 3200 3050 3200
+Wire Wire Line
+	2900 3050 3500 3050
+Connection ~ 3050 3200
+Wire Wire Line
+	3050 3200 2650 3200
+$Comp
+L Keyboard-symbols:power_+5V #PWR?
+U 1 1 5CE27D55
+P 950 800
+F 0 "#PWR?" H 950 650 50  0001 C CNN
+F 1 "+5V" H 965 973 50  0000 C CNN
+F 2 "" H 950 800 50  0001 C CNN
+F 3 "" H 950 800 50  0001 C CNN
+	1    950  800 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5750 1700 2    61   Input ~ 0
+LED_SW_9
+Text Notes 9050 850  0    60   ~ 0
+PCB routing note. 
+Text Notes 9100 1050 0    60   ~ 0
+SW trace should be wider than CS traces \n
+$Comp
+L power:GND #PWR?
+U 1 1 5B794677
+P 3500 5750
+F 0 "#PWR?" H 3500 5500 50  0001 C CNN
+F 1 "GND" V 3505 5622 50  0000 R CNN
+F 2 "" H 3500 5750 50  0001 C CNN
+F 3 "" H 3500 5750 50  0001 C CNN
+	1    3500 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L legacy:TST #TST1
+U 1 1 666B07CE
+P 5750 1700
+F 0 "#TST1" H 5750 1775 50  0001 C CNN
+F 1 "LED_SW_9" H 5750 1874 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 1700 50  0001 C CNN
+F 3 "~" H 5750 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST6
+U 1 1 66FF23F7
+P 6075 1800
+F 0 "#TST6" H 6075 1875 50  0001 C CNN
+F 1 "LED_SW_8" H 6075 1974 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6075 1800 50  0001 C CNN
+F 3 "~" H 6075 1800 50  0001 C CNN
+	1    6075 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST2
+U 1 1 68270FD9
+P 5750 1900
+F 0 "#TST2" H 5750 1975 50  0001 C CNN
+F 1 "LED_SW_7" H 5750 2074 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 1900 50  0001 C CNN
+F 3 "~" H 5750 1900 50  0001 C CNN
+	1    5750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST7
+U 1 1 68271514
+P 6075 2000
+F 0 "#TST7" H 6075 2075 50  0001 C CNN
+F 1 "LED_SW_6" H 6075 2174 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6075 2000 50  0001 C CNN
+F 3 "~" H 6075 2000 50  0001 C CNN
+	1    6075 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST8
+U 1 1 68711563
+P 6075 2200
+F 0 "#TST8" H 6075 2275 50  0001 C CNN
+F 1 "LED_SW_4" H 6075 2374 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6075 2200 50  0001 C CNN
+F 3 "~" H 6075 2200 50  0001 C CNN
+	1    6075 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST3
+U 1 1 68711A9E
+P 5750 2100
+F 0 "#TST3" H 5750 2175 50  0001 C CNN
+F 1 "LED_SW_5" H 5750 2274 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 2100 50  0001 C CNN
+F 3 "~" H 5750 2100 50  0001 C CNN
+	1    5750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST9
+U 1 1 68711FD9
+P 6075 2400
+F 0 "#TST9" H 6075 2475 50  0001 C CNN
+F 1 "LED_SW_2" H 6075 2574 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6075 2400 50  0001 C CNN
+F 3 "~" H 6075 2400 50  0001 C CNN
+	1    6075 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST4
+U 1 1 68712514
+P 5750 2300
+F 0 "#TST4" H 5750 2375 50  0001 C CNN
+F 1 "LED_SW_3" H 5750 2474 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 2300 50  0001 C CNN
+F 3 "~" H 5750 2300 50  0001 C CNN
+	1    5750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST5
+U 1 1 68712A4F
+P 5750 2500
+F 0 "#TST5" H 5750 2575 50  0001 C CNN
+F 1 "LED_SW_1" H 5750 2674 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 2500 50  0001 C CNN
+F 3 "~" H 5750 2500 50  0001 C CNN
+	1    5750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1700 5750 1700
+Text GLabel 10100 4525 2    61   Input ~ 0
+LED_CS_10_B
+$Comp
+L legacy:TST #TST36
+U 1 1 81B05216
+P 10100 5425
+F 0 "#TST36" H 10100 5500 50  0001 C CNN
+F 1 "LED_CS_13_B" H 10100 5599 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 5425 50  0001 C CNN
+F 3 "~" H 10100 5425 50  0001 C CNN
+	1    10100 5425
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST37
+U 1 1 81B0781F
+P 10100 5125
+F 0 "#TST37" H 10100 5200 50  0001 C CNN
+F 1 "LED_CS_12_B" H 10100 5299 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 5125 50  0001 C CNN
+F 3 "~" H 10100 5125 50  0001 C CNN
+	1    10100 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST38
+U 1 1 832DE498
+P 10100 4825
+F 0 "#TST38" H 10100 4900 50  0001 C CNN
+F 1 "LED_CS_11_B" H 10100 4999 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 4825 50  0001 C CNN
+F 3 "~" H 10100 4825 50  0001 C CNN
+	1    10100 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST39
+U 1 1 8412BE42
+P 10100 4525
+F 0 "#TST39" H 10100 4600 50  0001 C CNN
+F 1 "LED_CS_10_B" H 10100 4699 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 4525 50  0001 C CNN
+F 3 "~" H 10100 4525 50  0001 C CNN
+	1    10100 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST40
+U 1 1 84F79B52
+P 10100 5725
+F 0 "#TST40" H 10100 5800 50  0001 C CNN
+F 1 "LED_CS_9_B" H 10100 5899 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 5725 50  0001 C CNN
+F 3 "~" H 10100 5725 50  0001 C CNN
+	1    10100 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST41
+U 1 1 8543EC5F
+P 10100 3625
+F 0 "#TST41" H 10100 3700 50  0001 C CNN
+F 1 "LED_CS_8_B" H 10100 3799 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 3625 50  0001 C CNN
+F 3 "~" H 10100 3625 50  0001 C CNN
+	1    10100 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST42
+U 1 1 870DA4CC
+P 10100 3925
+F 0 "#TST42" H 10100 4000 50  0001 C CNN
+F 1 "LED_CS_7_B" H 10100 4099 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 3925 50  0001 C CNN
+F 3 "~" H 10100 3925 50  0001 C CNN
+	1    10100 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST43
+U 1 1 8759F5D9
+P 10100 4225
+F 0 "#TST43" H 10100 4300 50  0001 C CNN
+F 1 "LED_CS_6_B" H 10100 4399 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 4225 50  0001 C CNN
+F 3 "~" H 10100 4225 50  0001 C CNN
+	1    10100 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST44
+U 1 1 88D765B8
+P 10100 2425
+F 0 "#TST44" H 10100 2500 50  0001 C CNN
+F 1 "LED_CS_5_B" H 10100 2599 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 2425 50  0001 C CNN
+F 3 "~" H 10100 2425 50  0001 C CNN
+	1    10100 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST45
+U 1 1 89BC3DAF
+P 10100 6025
+F 0 "#TST45" H 10100 6100 50  0001 C CNN
+F 1 "LED_CS_4_B" H 10100 6199 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 6025 50  0001 C CNN
+F 3 "~" H 10100 6025 50  0001 C CNN
+	1    10100 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST46
+U 1 1 8A088D09
+P 10100 2725
+F 0 "#TST46" H 10100 2800 50  0001 C CNN
+F 1 "LED_CS_3_B" H 10100 2899 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 2725 50  0001 C CNN
+F 3 "~" H 10100 2725 50  0001 C CNN
+	1    10100 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST47
+U 1 1 8B85FE9B
+P 10100 3025
+F 0 "#TST47" H 10100 3100 50  0001 C CNN
+F 1 "LED_CS_2_B" H 10100 3199 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 3025 50  0001 C CNN
+F 3 "~" H 10100 3025 50  0001 C CNN
+	1    10100 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST48
+U 1 1 8CB7279F
+P 10100 3325
+F 0 "#TST48" H 10100 3400 50  0001 C CNN
+F 1 "LED_CS_1_B" H 10100 3499 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 3325 50  0001 C CNN
+F 3 "~" H 10100 3325 50  0001 C CNN
+	1    10100 3325
+	1    0    0    -1  
+$EndComp
+Text Label 1200 800  0    50   ~ 0
+LED_DRIVER_VCC
+Text Label 1300 1000 0    50   ~ 0
+LED_PVCC
+$Comp
+L Keyboard-symbols:power_+5V #PWR?
+U 1 1 5BADDAC0
+P 950 1000
+F 0 "#PWR?" H 950 850 50  0001 C CNN
+F 1 "+5V" H 965 1173 50  0000 C CNN
+F 2 "" H 950 1000 50  0001 C CNN
+F 3 "" H 950 1000 50  0001 C CNN
+	1    950  1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  1000 1300 1000
+Wire Wire Line
+	1200 800  950  800 
+Text Label 2250 4100 2    50   ~ 0
+LED_DRIVER_VCC
+Connection ~ 2350 2900
+Text Label 2350 1300 2    50   ~ 0
+LED_PVCC
+Text Label 6000 6700 0    50   ~ 0
+CS1
+Text Label 6000 6600 0    50   ~ 0
+CS2
+Text Label 6000 6500 0    50   ~ 0
+CS3
+Text Label 6000 6400 0    50   ~ 0
+CS4
+Text Label 6000 6300 0    50   ~ 0
+CS5
+Text Label 6000 6200 0    50   ~ 0
+CS6
+Text Label 6000 6100 0    50   ~ 0
+CS7
+Text Label 6000 6000 0    50   ~ 0
+CS8
+Text Label 6000 5900 0    50   ~ 0
+CS9
+Text Label 6000 5800 0    50   ~ 0
+CS10
+Text Label 6000 5700 0    50   ~ 0
+CS11
+Text Label 6000 5600 0    50   ~ 0
+CS12
+Text Label 6000 5500 0    50   ~ 0
+CS13
+Text Label 6000 5400 0    50   ~ 0
+CS14
+Text Label 6000 5300 0    50   ~ 0
+CS15
+Text Label 6000 5200 0    50   ~ 0
+CS16
+Text Label 6000 5100 0    50   ~ 0
+CS17
+Text Label 6000 5000 0    50   ~ 0
+CS18
+Text Label 6000 4900 0    50   ~ 0
+CS19
+Text Label 6000 4800 0    50   ~ 0
+CS20
+Text Label 6000 4700 0    50   ~ 0
+CS21
+Text Label 6000 4600 0    50   ~ 0
+CS22
+Text Label 6000 4500 0    50   ~ 0
+CS23
+Text Label 6000 4400 0    50   ~ 0
+CS24
+Text Label 6000 4300 0    50   ~ 0
+CS25
+Text Label 6000 4100 0    50   ~ 0
+CS27
+Text Label 6000 4200 0    50   ~ 0
+CS26
+Text Label 6000 4000 0    50   ~ 0
+CS28
+Text Label 6000 3900 0    50   ~ 0
+CS29
+Text Label 6000 3800 0    50   ~ 0
+CS30
+Text Label 6000 3700 0    50   ~ 0
+CS31
+Text Label 6000 3600 0    50   ~ 0
+CS32
+Text Label 6000 3500 0    50   ~ 0
+CS33
+Text Label 6000 3400 0    50   ~ 0
+CS34
+Text Label 6000 3300 0    50   ~ 0
+CS35
+Text Label 6000 3200 0    50   ~ 0
+CS36
+Text Label 6000 3100 0    50   ~ 0
+CS37
+Text Label 6000 3000 0    50   ~ 0
+CS38
+Text Label 6000 2900 0    50   ~ 0
+CS39
+Wire Wire Line
+	8875 5225 8375 5225
+Wire Wire Line
+	8875 5325 8375 5325
+Wire Wire Line
+	8875 5425 8375 5425
+Wire Wire Line
+	8875 4925 8375 4925
+Wire Wire Line
+	8875 5025 8375 5025
+Wire Wire Line
+	8875 3725 8375 3725
+Wire Wire Line
+	8875 4625 8375 4625
+Wire Wire Line
+	8875 4725 8375 4725
+Wire Wire Line
+	8875 4825 8375 4825
+Wire Wire Line
+	8875 4325 8375 4325
+Wire Wire Line
+	8875 4425 8375 4425
+Wire Wire Line
+	8875 4525 8375 4525
+Wire Wire Line
+	8875 5525 8375 5525
+Wire Wire Line
+	8875 5625 8375 5625
+Wire Wire Line
+	8875 5725 8375 5725
+Wire Wire Line
+	8875 3425 8375 3425
+Wire Wire Line
+	8875 3525 8375 3525
+Wire Wire Line
+	8875 5125 8375 5125
+Wire Wire Line
+	8875 3625 8375 3625
+Wire Wire Line
+	8875 3825 8375 3825
+Wire Wire Line
+	8875 3925 8375 3925
+Wire Wire Line
+	8875 4025 8375 4025
+Wire Wire Line
+	8875 4125 8375 4125
+Wire Wire Line
+	8875 4225 8375 4225
+Wire Wire Line
+	8875 2225 8375 2225
+Wire Wire Line
+	8875 2325 8375 2325
+Wire Wire Line
+	8875 2425 8375 2425
+Wire Wire Line
+	8875 5825 8375 5825
+Wire Wire Line
+	8875 5925 8375 5925
+Wire Wire Line
+	8875 6025 8375 6025
+Wire Wire Line
+	8875 2525 8375 2525
+Wire Wire Line
+	8875 2625 8375 2625
+Wire Wire Line
+	8875 2725 8375 2725
+Wire Wire Line
+	8875 2825 8375 2825
+Wire Wire Line
+	8875 2925 8375 2925
+Wire Wire Line
+	8875 3025 8375 3025
+Wire Wire Line
+	8875 3125 8375 3125
+Wire Wire Line
+	8875 3225 8375 3225
+Wire Wire Line
+	8875 3325 8375 3325
+$Comp
+L legacy:TST #TST22
+U 1 1 8C6ADBAB
+P 9375 3125
+F 0 "#TST22" H 9375 3200 50  0001 C CNN
+F 1 "LED_CS_1_R" H 9375 3299 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 3125 50  0001 C CNN
+F 3 "~" H 9375 3125 50  0001 C CNN
+	1    9375 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST35
+U 1 1 8BD24729
+P 9750 3225
+F 0 "#TST35" H 9750 3300 50  0001 C CNN
+F 1 "LED_CS_1_G" H 9750 3399 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 3225 50  0001 C CNN
+F 3 "~" H 9750 3225 50  0001 C CNN
+	1    9750 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST34
+U 1 1 8B39B60D
+P 9750 2925
+F 0 "#TST34" H 9750 3000 50  0001 C CNN
+F 1 "LED_CS_2_G" H 9750 3099 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 2925 50  0001 C CNN
+F 3 "~" H 9750 2925 50  0001 C CNN
+	1    9750 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST21
+U 1 1 8AED66B3
+P 9375 2825
+F 0 "#TST21" H 9375 2900 50  0001 C CNN
+F 1 "LED_CS_2_R" H 9375 2999 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 2825 50  0001 C CNN
+F 3 "~" H 9375 2825 50  0001 C CNN
+	1    9375 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST20
+U 1 1 8AA11E25
+P 9375 2525
+F 0 "#TST20" H 9375 2600 50  0001 C CNN
+F 1 "LED_CS_3_R" H 9375 2699 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 2525 50  0001 C CNN
+F 3 "~" H 9375 2525 50  0001 C CNN
+	1    9375 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST33
+U 1 1 8A54D597
+P 9750 2625
+F 0 "#TST33" H 9750 2700 50  0001 C CNN
+F 1 "LED_CS_3_G" H 9750 2799 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 2625 50  0001 C CNN
+F 3 "~" H 9750 2625 50  0001 C CNN
+	1    9750 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST32
+U 1 1 896FF521
+P 9750 5925
+F 0 "#TST32" H 9750 6000 50  0001 C CNN
+F 1 "LED_CS_4_G" H 9750 6099 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 5925 50  0001 C CNN
+F 3 "~" H 9750 5925 50  0001 C CNN
+	1    9750 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST19
+U 1 1 8923AC93
+P 9375 5825
+F 0 "#TST19" H 9375 5900 50  0001 C CNN
+F 1 "LED_CS_4_R" H 9375 5999 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 5825 50  0001 C CNN
+F 3 "~" H 9375 5825 50  0001 C CNN
+	1    9375 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST31
+U 1 1 888B1811
+P 9750 2325
+F 0 "#TST31" H 9750 2400 50  0001 C CNN
+F 1 "LED_CS_5_G" H 9750 2499 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 2325 50  0001 C CNN
+F 3 "~" H 9750 2325 50  0001 C CNN
+	1    9750 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST18
+U 1 1 883ECF83
+P 9375 2225
+F 0 "#TST18" H 9375 2300 50  0001 C CNN
+F 1 "LED_CS_5_R" H 9375 2399 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 2225 50  0001 C CNN
+F 3 "~" H 9375 2225 50  0001 C CNN
+	1    9375 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST17
+U 1 1 87F286F5
+P 9375 4025
+F 0 "#TST17" H 9375 4100 50  0001 C CNN
+F 1 "LED_CS_6_R" H 9375 4199 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 4025 50  0001 C CNN
+F 3 "~" H 9375 4025 50  0001 C CNN
+	1    9375 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST30
+U 1 1 87A63E67
+P 9750 4125
+F 0 "#TST30" H 9750 4200 50  0001 C CNN
+F 1 "LED_CS_3_B" H 9750 4299 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 4125 50  0001 C CNN
+F 3 "~" H 9750 4125 50  0001 C CNN
+	1    9750 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST29
+U 1 1 86C15C3E
+P 9750 3825
+F 0 "#TST29" H 9750 3900 50  0001 C CNN
+F 1 "LED_CS_7_G" H 9750 3999 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 3825 50  0001 C CNN
+F 3 "~" H 9750 3825 50  0001 C CNN
+	1    9750 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST16
+U 1 1 8628C609
+P 9375 3725
+F 0 "#TST16" H 9375 3800 50  0001 C CNN
+F 1 "LED_CS_7_R" H 9375 3899 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 3725 50  0001 C CNN
+F 3 "~" H 9375 3725 50  0001 C CNN
+	1    9375 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST15
+U 1 1 85DC7D7B
+P 9750 3525
+F 0 "#TST15" H 9750 3600 50  0001 C CNN
+F 1 "LED_CS_8_R" H 9750 3699 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 3525 50  0001 C CNN
+F 3 "~" H 9750 3525 50  0001 C CNN
+	1    9750 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST28
+U 1 1 859034ED
+P 9375 3425
+F 0 "#TST28" H 9375 3500 50  0001 C CNN
+F 1 "LED_CS_8_G" H 9375 3599 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 3425 50  0001 C CNN
+F 3 "~" H 9375 3425 50  0001 C CNN
+	1    9375 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST27
+U 1 1 84AB52C4
+P 9375 5525
+F 0 "#TST27" H 9375 5600 50  0001 C CNN
+F 1 "LED_CS_9_G" H 9375 5699 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 5525 50  0001 C CNN
+F 3 "~" H 9375 5525 50  0001 C CNN
+	1    9375 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST14
+U 1 1 845F06D0
+P 9750 5625
+F 0 "#TST14" H 9750 5700 50  0001 C CNN
+F 1 "LED_CS_9_R" H 9750 5799 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 5625 50  0001 C CNN
+F 3 "~" H 9750 5625 50  0001 C CNN
+	1    9750 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST13
+U 1 1 83C675B4
+P 9375 4325
+F 0 "#TST13" H 9375 4400 50  0001 C CNN
+F 1 "LED_CS_10_R" H 9375 4499 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 4325 50  0001 C CNN
+F 3 "~" H 9375 4325 50  0001 C CNN
+	1    9375 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST26
+U 1 1 837A2D26
+P 9750 4425
+F 0 "#TST26" H 9750 4500 50  0001 C CNN
+F 1 "LED_CS_10_G" H 9750 4599 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 4425 50  0001 C CNN
+F 3 "~" H 9750 4425 50  0001 C CNN
+	1    9750 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST25
+U 1 1 82E19C0A
+P 9750 4725
+F 0 "#TST25" H 9750 4800 50  0001 C CNN
+F 1 "LED_CS_11_G" H 9750 4899 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 4725 50  0001 C CNN
+F 3 "~" H 9750 4725 50  0001 C CNN
+	1    9750 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST12
+U 1 1 829551C9
+P 9375 4625
+F 0 "#TST12" H 9375 4700 50  0001 C CNN
+F 1 "LED_CS_11_R" H 9375 4799 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 4625 50  0001 C CNN
+F 3 "~" H 9375 4625 50  0001 C CNN
+	1    9375 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST11
+U 1 1 8249093B
+P 9375 4925
+F 0 "#TST11" H 9375 5000 50  0001 C CNN
+F 1 "LED_CS_12_R" H 9375 5099 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 4925 50  0001 C CNN
+F 3 "~" H 9375 4925 50  0001 C CNN
+	1    9375 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST24
+U 1 1 81FCC0AD
+P 9750 5025
+F 0 "#TST24" H 9750 5100 50  0001 C CNN
+F 1 "LED_CS_12_G" H 9750 5199 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 5025 50  0001 C CNN
+F 3 "~" H 9750 5025 50  0001 C CNN
+	1    9750 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST23
+U 1 1 81B02BDE
+P 9750 5325
+F 0 "#TST23" H 9750 5400 50  0001 C CNN
+F 1 "LED_CS_13_G" H 9750 5499 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 5325 50  0001 C CNN
+F 3 "~" H 9750 5325 50  0001 C CNN
+	1    9750 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L legacy:TST #TST10
+U 1 1 81B01749
+P 9375 5225
+F 0 "#TST10" H 9375 5300 50  0001 C CNN
+F 1 "LED_CS_13_R" H 9375 5399 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9375 5225 50  0001 C CNN
+F 3 "~" H 9375 5225 50  0001 C CNN
+	1    9375 5225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9375 5425 10100 5425
+Wire Wire Line
+	9375 5325 9750 5325
+Wire Wire Line
+	9750 5025 9375 5025
+Wire Wire Line
+	9375 5125 10100 5125
+Wire Wire Line
+	9375 4825 10100 4825
+Wire Wire Line
+	9375 4725 9750 4725
+Wire Wire Line
+	9375 4425 9750 4425
+Wire Wire Line
+	9375 4525 10100 4525
+Wire Wire Line
+	9375 5625 9750 5625
+Wire Wire Line
+	9375 5725 10100 5725
+Wire Wire Line
+	9375 3525 9750 3525
+Wire Wire Line
+	9375 3625 10100 3625
+Wire Wire Line
+	10100 3925 9375 3925
+Wire Wire Line
+	9375 3825 9750 3825
+Wire Wire Line
+	9375 4125 9750 4125
+Wire Wire Line
+	10100 4225 9375 4225
+Wire Wire Line
+	9375 2425 10100 2425
+Wire Wire Line
+	9375 2325 9750 2325
+Wire Wire Line
+	9375 5925 9750 5925
+Wire Wire Line
+	10100 6025 9375 6025
+Wire Wire Line
+	9375 2625 9750 2625
+Wire Wire Line
+	10100 2725 9375 2725
+Wire Wire Line
+	9375 2925 9750 2925
+Wire Wire Line
+	9375 3025 10100 3025
+Wire Wire Line
+	9375 3225 9750 3225
+Wire Wire Line
+	9375 3325 10100 3325
+Text GLabel 9750 4425 2    61   Input ~ 0
+LED_CS_10_G
+$Comp
+L Keyboard-symbols:device_R R14
+U 1 1 5F27C499
+P 9125 5325
+F 0 "R14" V 9175 5075 50  0000 C CNN
+F 1 "100" V 9125 5325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5325 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5325 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 5325 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5325
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R15
+U 1 1 5F27C492
+P 9125 5425
+F 0 "R15" V 9175 5175 50  0000 C CNN
+F 1 "100" V 9125 5425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5425 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5425 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 5425 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5425
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R13
+U 1 1 5F27C48B
+P 9125 5225
+F 0 "R13" V 9175 4975 50  0000 C CNN
+F 1 "180" V 9125 5225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5225 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5225 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 5225 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5225
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R20
+U 1 1 5EE6B1EC
+P 9125 4725
+F 0 "R20" V 9175 4475 50  0000 C CNN
+F 1 "100" V 9125 4725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4725 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4725 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 4725 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4725
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R21
+U 1 1 5EE6B1E5
+P 9125 4825
+F 0 "R21" V 9175 4575 50  0000 C CNN
+F 1 "100" V 9125 4825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4825 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4825 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 4825 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4825
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R19
+U 1 1 5EE6B1DE
+P 9125 4625
+F 0 "R19" V 9175 4375 50  0000 C CNN
+F 1 "180" V 9125 4625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4625 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4625 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 4625 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4625
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R17
+U 1 1 5EE6B1D7
+P 9125 5025
+F 0 "R17" V 9175 4775 50  0000 C CNN
+F 1 "100" V 9125 5025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5025 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5025 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 5025 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5025
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R18
+U 1 1 5EE6B1D0
+P 9125 5125
+F 0 "R18" V 9175 4875 50  0000 C CNN
+F 1 "100" V 9125 5125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5125 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5125 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 5125 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5125
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R16
+U 1 1 5EE6B1C9
+P 9125 4925
+F 0 "R16" V 9175 4675 50  0000 C CNN
+F 1 "180" V 9125 4925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4925 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4925 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 4925 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4925
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R26
+U 1 1 5EA59F2D
+P 9125 5625
+F 0 "R26" V 9175 5375 50  0000 C CNN
+F 1 "100" V 9125 5625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5625 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5625 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 5625 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5625
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R27
+U 1 1 5EA59F26
+P 9125 5725
+F 0 "R27" V 9175 5475 50  0000 C CNN
+F 1 "100" V 9125 5725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5725 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5725 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 5725 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5725
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R25
+U 1 1 5EA59F1F
+P 9125 5525
+F 0 "R25" V 9175 5275 50  0000 C CNN
+F 1 "180" V 9125 5525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5525 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5525 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 5525 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5525
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R23
+U 1 1 5EA59F18
+P 9125 4425
+F 0 "R23" V 9175 4175 50  0000 C CNN
+F 1 "100" V 9125 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4425 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4425 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 4425 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4425
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R24
+U 1 1 5EA59F11
+P 9125 4525
+F 0 "R24" V 9175 4275 50  0000 C CNN
+F 1 "100" V 9125 4525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4525 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4525 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 4525 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4525
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R22
+U 1 1 5EA59F0A
+P 9125 4325
+F 0 "R22" V 9175 4075 50  0000 C CNN
+F 1 "180" V 9125 4325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4325 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4325 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 4325 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4325
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R32
+U 1 1 5E647FBC
+P 9125 3825
+F 0 "R32" V 9175 3575 50  0000 C CNN
+F 1 "100" V 9125 3825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3825 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3825 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 3825 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3825
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R33
+U 1 1 5E647FB5
+P 9125 3925
+F 0 "R33" V 9175 3675 50  0000 C CNN
+F 1 "100" V 9125 3925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3925 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3925 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 3925 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3925
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R31
+U 1 1 5E647FAE
+P 9125 3725
+F 0 "R31" V 9175 3475 50  0000 C CNN
+F 1 "180" V 9125 3725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3725 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3725 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 3725 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R29
+U 1 1 5E647FA7
+P 9125 3525
+F 0 "R29" V 9175 3275 50  0000 C CNN
+F 1 "100" V 9125 3525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3525 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3525 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 3525 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3525
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R30
+U 1 1 5E647FA0
+P 9125 3625
+F 0 "R30" V 9175 3375 50  0000 C CNN
+F 1 "100" V 9125 3625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3625 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3625 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 3625 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3625
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R28
+U 1 1 5E647F99
+P 9125 3425
+F 0 "R28" V 9175 3175 50  0000 C CNN
+F 1 "180" V 9125 3425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3425 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3425 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 3425 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R38
+U 1 1 5E236CD9
+P 9125 2325
+F 0 "R38" V 9175 2075 50  0000 C CNN
+F 1 "100" V 9125 2325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2325 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2325 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 2325 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 5% 1/16W 0402	" H 1075 -8625 50  0001 C CNN "Field4"
+F 6 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 7 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 8 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 9 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R39
+U 1 1 5E236CD2
+P 9125 2425
+F 0 "R39" V 9175 2175 50  0000 C CNN
+F 1 "100" V 9125 2425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2425 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2425 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 2425 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 5% 1/16W 0402	" H 1075 -8625 50  0001 C CNN "Field4"
+F 6 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 7 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 8 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 9 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2425
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R37
+U 1 1 5E236CCB
+P 9125 2225
+F 0 "R37" V 9175 1975 50  0000 C CNN
+F 1 "180" V 9125 2225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2225 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2225 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 2225 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2225
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R35
+U 1 1 5E236CC4
+P 9125 4125
+F 0 "R35" V 9175 3875 50  0000 C CNN
+F 1 "100" V 9125 4125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4125 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4125 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 4125 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4125
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R36
+U 1 1 5E236CBD
+P 9125 4225
+F 0 "R36" V 9175 3975 50  0000 C CNN
+F 1 "100" V 9125 4225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4225 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4225 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 4225 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4225
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R34
+U 1 1 5E236CB6
+P 9125 4025
+F 0 "R34" V 9175 3775 50  0000 C CNN
+F 1 "180" V 9125 4025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4025 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 4025 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 4025 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 4025
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R44
+U 1 1 5DE25A80
+P 9125 2625
+F 0 "R44" V 9175 2375 50  0000 C CNN
+F 1 "100" V 9125 2625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2625 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2625 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 2625 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R45
+U 1 1 5DE25A79
+P 9125 2725
+F 0 "R45" V 9175 2475 50  0000 C CNN
+F 1 "100" V 9125 2725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2725 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2725 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 2725 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R43
+U 1 1 5DE25A72
+P 9125 2525
+F 0 "R43" V 9175 2275 50  0000 C CNN
+F 1 "180" V 9125 2525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2525 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2525 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 2525 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R41
+U 1 1 5DE25A6B
+P 9125 5925
+F 0 "R41" V 9175 5675 50  0000 C CNN
+F 1 "100" V 9125 5925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5925 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5925 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 5925 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5925
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R42
+U 1 1 5DE25A64
+P 9125 6025
+F 0 "R42" V 9175 5775 50  0000 C CNN
+F 1 "100" V 9125 6025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 6025 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 6025 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 6025 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 6025
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R40
+U 1 1 5DE25A5D
+P 9125 5825
+F 0 "R40" V 9175 5575 50  0000 C CNN
+F 1 "180" V 9125 5825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 5825 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 5825 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 5825 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 5825
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R50
+U 1 1 5C5B694F
+P 9125 3225
+F 0 "R50" V 9175 2975 50  0000 C CNN
+F 1 "100" V 9125 3225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3225 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3225 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 3225 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R51
+U 1 1 5C5B6948
+P 9125 3325
+F 0 "R51" V 9175 3075 50  0000 C CNN
+F 1 "100" V 9125 3325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3325 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3325 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 3325 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R49
+U 1 1 5C5B6941
+P 9125 3125
+F 0 "R49" V 9175 2875 50  0000 C CNN
+F 1 "180" V 9125 3125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3125 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3125 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 3125 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R47
+U 1 1 5B5FB2A8
+P 9125 2925
+F 0 "R47" V 9175 2675 50  0000 C CNN
+F 1 "100" V 9125 2925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2925 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2925 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 2925 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R48
+U 1 1 5B5FB34A
+P 9125 3025
+F 0 "R48" V 9175 2775 50  0000 C CNN
+F 1 "100" V 9125 3025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 3025 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 3025 100 0001 C CNN
+F 4 "RC0603FR-07100RL" V 9125 3025 50  0001 C CNN "MPN"
+F 5 "RES SMD 100 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-100HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603FR-07100RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 3025
+	0    1    1    0   
+$EndComp
+$Comp
+L Keyboard-symbols:device_R R46
+U 1 1 5BD93F37
+P 9125 2825
+F 0 "R46" V 9175 2575 50  0000 C CNN
+F 1 "180" V 9125 2825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2825 100 0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9125 2825 100 0001 C CNN
+F 4 "RC0603FR-07180RL" V 9125 2825 50  0001 C CNN "MPN"
+F 5 "RES SMD 180 OHM 1% 1/10W 0603" H -100 -950 50  0001 C CNN "Description"
+F 6 "311-180HRTR-ND" H -100 -950 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -100 -950 50  0001 C CNN "Manufacturer"
+F 8 "RC0603JR-07180RL	" H 0   0   50  0001 C CNN "Seeed Part Num"
+	1    9125 2825
+	0    1    1    0   
+$EndComp
+Text GLabel 9750 5325 2    61   Input ~ 0
+LED_CS_13_G
+Text GLabel 9375 4925 2    61   Input ~ 0
+LED_CS_12_R
+Text GLabel 9750 5025 2    61   Input ~ 0
+LED_CS_12_G
+Text GLabel 9375 5225 2    61   Input ~ 0
+LED_CS_13_R
+Text GLabel 9375 4625 2    61   Input ~ 0
+LED_CS_11_R
+Text GLabel 9750 4725 2    61   Input ~ 0
+LED_CS_11_G
+Text GLabel 9375 4325 2    61   Input ~ 0
+LED_CS_10_R
+Text GLabel 9375 5525 2    61   Input ~ 0
+LED_CS_9_R
+Text GLabel 9750 5625 2    61   Input ~ 0
+LED_CS_9_G
+Text GLabel 9375 3425 2    61   Input ~ 0
+LED_CS_8_R
+Text GLabel 9750 3525 2    61   Input ~ 0
+LED_CS_8_G
+Text GLabel 9375 3725 2    61   Input ~ 0
+LED_CS_7_R
+Text GLabel 9750 3825 2    61   Input ~ 0
+LED_CS_7_G
+Text GLabel 9375 4025 2    61   Input ~ 0
+LED_CS_6_R
+Text GLabel 9750 4125 2    61   Input ~ 0
+LED_CS_6_G
+Text GLabel 9375 2225 2    61   Input ~ 0
+LED_CS_5_R
+Text GLabel 9750 2325 2    61   Input ~ 0
+LED_CS_5_G
+Text GLabel 9375 5825 2    61   Input ~ 0
+LED_CS_4_R
+Text GLabel 9750 5925 2    61   Input ~ 0
+LED_CS_4_G
+Text GLabel 9375 2525 2    61   Input ~ 0
+LED_CS_3_R
+Text GLabel 9750 2625 2    61   Input ~ 0
+LED_CS_3_G
+Text GLabel 9375 2825 2    61   Input ~ 0
+LED_CS_2_R
+Text GLabel 9750 2925 2    61   Input ~ 0
+LED_CS_2_G
+Text GLabel 9375 3125 2    61   Input ~ 0
+LED_CS_1_R
+Text GLabel 9750 3225 2    61   Input ~ 0
+LED_CS_1_G
+Text Notes 1200 7500 0    100  ~ 0
+When Rset = 10Kohm, GCC = oxFF, SL = oxFF\n\nIout : maximum constant current of CS1-CS39,  ---> 38mA\nI led : Average current on each LED, I led = Iout/10.125, --->3.7mA
+Text Label 8375 6025 2    50   ~ 0
+CS1
+Text Label 8375 5925 2    50   ~ 0
+CS2
+Text Label 8375 5825 2    50   ~ 0
+CS3
+Text Label 8375 5725 2    50   ~ 0
+CS4
+Text Label 8375 5625 2    50   ~ 0
+CS5
+Text Label 8375 5525 2    50   ~ 0
+CS6
+Text Label 8375 5425 2    50   ~ 0
+CS7
+Text Label 8375 5325 2    50   ~ 0
+CS8
+Text Label 8375 5225 2    50   ~ 0
+CS9
+Text Label 8375 5125 2    50   ~ 0
+CS10
+Text Label 8375 5025 2    50   ~ 0
+CS11
+Text Label 8375 4925 2    50   ~ 0
+CS12
+Text Label 8375 4825 2    50   ~ 0
+CS13
+Text Label 8375 4725 2    50   ~ 0
+CS14
+Text Label 8375 4625 2    50   ~ 0
+CS15
+Text Label 8375 4525 2    50   ~ 0
+CS16
+Text Label 8375 4425 2    50   ~ 0
+CS17
+Text Label 8375 4325 2    50   ~ 0
+CS18
+Text Label 8375 4225 2    50   ~ 0
+CS19
+Text Label 8375 4125 2    50   ~ 0
+CS20
+Text Label 8375 4025 2    50   ~ 0
+CS21
+Text Label 8375 3925 2    50   ~ 0
+CS22
+Text Label 8375 3825 2    50   ~ 0
+CS23
+Text Label 8375 3725 2    50   ~ 0
+CS24
+Text Label 8375 3625 2    50   ~ 0
+CS25
+Text Label 8375 3425 2    50   ~ 0
+CS27
+Text Label 8375 3525 2    50   ~ 0
+CS26
+Text Label 8375 3325 2    50   ~ 0
+CS28
+Text Label 8375 3225 2    50   ~ 0
+CS29
+Text Label 8375 3125 2    50   ~ 0
+CS30
+Text Label 8375 3025 2    50   ~ 0
+CS31
+Text Label 8375 2925 2    50   ~ 0
+CS32
+Text Label 8375 2825 2    50   ~ 0
+CS33
+Text Label 8375 2725 2    50   ~ 0
+CS34
+Text Label 8375 2625 2    50   ~ 0
+CS35
+Text Label 8375 2525 2    50   ~ 0
+CS36
+Text Label 8375 2425 2    50   ~ 0
+CS37
+Text Label 8375 2325 2    50   ~ 0
+CS38
+Text Label 8375 2225 2    50   ~ 0
+CS39
+Wire Wire Line
+	2850 1850 2850 1750
+Wire Wire Line
+	1050 2900 1400 2900
+Wire Wire Line
+	2350 2300 2550 2300
+Wire Wire Line
+	2350 1750 2550 1750
+Wire Wire Line
+	2550 1850 2550 1750
+Connection ~ 2550 1750
+Wire Wire Line
+	2550 1750 2850 1750
+Wire Wire Line
+	2550 2150 2550 2050
+Wire Wire Line
+	2850 2150 2850 2050
+Wire Wire Line
+	2850 2400 2850 2300
+Connection ~ 2850 2300
+Wire Wire Line
+	2850 2300 2950 2300
+Wire Wire Line
+	2550 2400 2550 2300
+Connection ~ 2550 2300
+Wire Wire Line
+	2550 2300 2850 2300
+Wire Wire Line
+	2550 2600 2550 2700
+Wire Wire Line
+	2850 2700 2850 2600
+Wire Wire Line
+	3400 3950 3400 4100
+Wire Wire Line
+	3400 3500 3400 3750
+Wire Wire Line
+	1050 3000 1050 2900
+Wire Wire Line
+	1050 3200 1050 3350
+Wire Wire Line
+	1400 3200 1400 3350
+Wire Wire Line
+	1400 3000 1400 2900
+Connection ~ 1400 2900
+Wire Wire Line
+	1400 2900 2350 2900
+Wire Wire Line
+	3300 4150 3300 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5B5FB1A8
+P 3300 4150
+F 0 "#PWR?" H 3300 4150 30  0001 C CNN
+F 1 "VSS" H 3300 4080 30  0000 C CNN
+F 2 "" H 3300 4150 60  0000 C CNN
+F 3 "" H 3300 4150 60  0001 C CNN
+	1    3300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4000 3200 4100
+Wire Wire Line
+	3050 4100 3050 4000
+Wire Wire Line
+	2900 4000 2900 4100
+Wire Wire Line
+	2250 4100 2750 4100
+Connection ~ 2900 4100
+Wire Wire Line
+	2900 4100 3050 4100
+Wire Wire Line
+	2750 4000 2750 4100
+Connection ~ 2750 4100
+Wire Wire Line
+	2750 4100 2900 4100
+Wire Wire Line
+	2750 3350 2750 3700
+Wire Wire Line
+	2900 3050 2900 3700
+Wire Wire Line
+	3050 3200 3050 3700
+Wire Wire Line
+	3200 3500 3200 3700
+Wire Wire Line
+	2900 4850 2900 4750
+Connection ~ 2900 4850
+Wire Wire Line
+	2900 4300 2900 4450
+$EndSCHEMATC

@@ -1,0 +1,65 @@
+#!/bin/sh
+
+BOARD=$1
+FORMAT=$2
+DIR=$3
+
+
+# Output svg schematics
+
+perl -pi -e "s|PlotDirectoryName=.*[\r\n]+$||;sm" ./$BOARD.pro
+perl -pi -e "s|^\[schematic_editor\]|[schematic_editor]\nPlotDirectoryName=$DIR|m" ./$BOARD.pro
+
+if  grep -q PlotModeColor ~/.config/kicad/eeschema ; then
+	perl -pi -e's/^PlotModeColor=\d/PlotModeColor=1/g;' ~/.config/kicad/eeschema 
+else 
+	echo "PlotModeColor=1" >> ~/.config/kicad/eeschema
+fi
+
+if  grep -q PlotFrameRef ~/.config/kicad/eeschema ; then
+	perl -pi -e's/^PlotFrameRef=\d/PlotFrameRef=1/g;' ~/.config/kicad/eeschema 
+else 
+	echo "PlotFrameRef=1" >> ~/.config/kicad/eeschema
+fi
+
+
+if [ $FORMAT == "svg" ]; then
+
+if  grep -q PlotFormat ~/.config/kicad/eeschema ; then
+	perl -pi -e's/^PlotFormat=\d/PlotFormat=5/g;' ~/.config/kicad/eeschema 
+else 
+	echo "PlotFormat=5" >> ~/.config/kicad/eeschema
+fi
+
+fi
+
+
+if [ $FORMAT == "pdf" ]; then
+
+if  grep -q PlotFormat ~/.config/kicad/eeschema ; then
+	perl -pi -e's/^PlotFormat=\d/PlotFormat=4/g;' ~/.config/kicad/eeschema 
+else 
+	echo "PlotFormat=4" >> ~/.config/kicad/eeschema
+fi
+
+fi
+
+
+
+# In a proper world, we'd unset this later
+
+eeschema $BOARD.sch &
+MYPID=$!
+echo $MYPID
+sleep 2;
+WINDOWID=`xdotool search --onlyvisible  --pid $MYPID`
+xdotool windowfocus $WINDOWID
+sleep 5;
+xdotool key alt+f l
+ sleep 1
+xdotool key shift+Tab;
+xdotool type $DIR
+ xdotool key Return;
+ xdotool key Escape;
+	sleep 1;
+ xdotool key ctrl+q;

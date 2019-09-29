@@ -1,0 +1,1 @@
+rm -rf s65; ./layout.pl --usb=c --project=s65 --with-leds --layout=kle-layouts/normal-65.json; cd s65; pcbnew s65.kicad_pcb ; cd ..
