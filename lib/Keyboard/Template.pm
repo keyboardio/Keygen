@@ -29,7 +29,7 @@ sub load {
     my $self = shift;
     my $name = shift;
     if (!-f $self->template_file_name) {
-        warn "Don't see " . $self->template_file_name;
+        #warn "Don't see " . $self->template_file_name;
 	return 0;
     }
     open(my $fh, "<", $self->template_file_name);

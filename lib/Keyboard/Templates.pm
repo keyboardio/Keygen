@@ -19,7 +19,7 @@ sub load {
 sub copy_generic_templates {
     my $project = shift;
  
-	warn "Project name is ".$project->name; 
+	#warn "Project name is ".$project->name; 
     my @files = glob( "kicad-template" . '/*' );
     for my $template_path (@files) {
 	my @template_path_parts = split(/\//,$template_path); 
