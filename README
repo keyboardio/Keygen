@@ -25,6 +25,17 @@ cd 104-key
 kicad 104-key.pro
 
 
+Notes:
+
+It currently generates schematics and layouts assuming a ATMega32U4. The schematic has sheets for three different ways to wire things up: components-on-pcb, teensy 2.0++, arduino-micro.
+I know the pro micro is more popular in Japan and I'm happy to have that added as an option.
+It'd just need another schematic sheet in the template project and a footprint for adding it to the pcb.
+led support is a boolean option. Right now, LEDs are designed as dumb rgb pixels + an issi controller.
+the logic parts of the PCB don't get placed or connected to the switch and led matrix automatically. That's a much harder wiring problem.
+Instead, I hand-drew layouts for those and place them off the side of the PCB for you to drag into place and wire up.
+I have produced two PCBs based on earlier versions of this tool with some manual rework. They did -work-. But results are not guaranteed.
+
+
 -Jesse
 jesse@keyboard.io
 
