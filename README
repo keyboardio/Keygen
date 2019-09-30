@@ -1,0 +1,30 @@
+Setting up:
+
+* Install perl modules
+* Check out git submodule
+
+
+Perl Dependencies:
+
+JSON::XS
+Moose
+
+
+Non-perl Dependencies:
+
+This tool currently builds KiCad 6.0 projects. That's not strictly necessary. If you need us to back down to 5.1, please say so.
+
+
+There's a git submodule of 'kicad', which includes the keyboardio kicad footprints. Pull requests over there are welcome.
+
+
+Usage:
+
+perl layout.pl --usb=c --project=104-key --layout=kle-layouts/104.json 
+cd 104-key
+kicad 104-key.pro
+
+
+-Jesse
+jesse@keyboard.io
+
