@@ -27,6 +27,7 @@ has placed_footprints => (is => 'rw', isa => 'ArrayRef', default => sub {[]});
 has key_spacing => (is => 'rw', isa => 'Num', default => 19.05);
 
 has with_leds => (is => 'rw', isa => 'Bool', default => 0);
+has mcu_board => (is => 'rw', isa => 'Str', default => '');
 
 has usb_type => (is => 'rw', isa => 'Str', default => 'c');
 has top_edge    => (is => 'rw', isa => 'Num', default => -1);
@@ -796,7 +797,10 @@ sub finish {
     } elsif ($self->usb_type eq 'micro') {
         $self->insert_predrawn_section('usb-micro');
     }
-    $self->insert_predrawn_section('arduino-micro');
+
+    if ($self->mcu_board eq 'arduino-micro') {
+        $self->insert_predrawn_section('arduino-micro');
+    }
     $self->draw_outline();
     $self->draw_ground_planes();
     $self->interpret_footprint_templates();

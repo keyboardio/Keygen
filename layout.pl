@@ -34,11 +34,15 @@ sub main {
     # Key spacing
     my $key_spacing = 19.05;
 
+    # Which dev board, if any, to provide a socket for
+    my $mcu_board = "";
+
     GetOptions(
         "layout=s",  \$layout_file_name,
         "project=s", \$project_name,
         "with-leds"     => \$with_leds,
         "usb=s"         => \$usb_type,
+	"mcu-board=s"	=> \$mcu_board,
         "switch=s"      => \$switch_type,
         "key-spacing=s" => \$key_spacing
     );
@@ -50,6 +54,8 @@ sub main {
 
     die "Layout needs to be passed in with --layout=filename\nThe layout should be JSON exported by KLE\n"
         unless ($layout_file_name && -f $layout_file_name);
+
+    die "Unknown MCU board '$mcu_board'. Valid values are teensy2 and arduino-micro \n" if ($mcu_board && $mcu_board ne 'teensy2' && $mcu_board ne 'arduino-micro');
 
     my $kb = Keyboard->new(
         name      => $project_name,
@@ -80,13 +86,21 @@ sub main {
         y_origin_offset => 42,
         switch_type     => $switch_type,
         usb_type        => $usb_type,
-        key_spacing     => $key_spacing
+        key_spacing     => $key_spacing,
+	mcu_board	=> $mcu_board
     );
     my $schematic = Keyboard::Schematic->new(project => $kb, with_leds => $with_leds);
 
     $schematic->init();
     $pcb->init();
 
+    if (!$mcu_board || $mcu_board ne 'teensy2') {
+	remove_schematic_sheet($kb, 'MCU-Teensy20.sch');
+	}
+
+    if (!$mcu_board || $mcu_board ne 'arduino-micro') {
+	remove_schematic_sheet($kb, 'MCU-Arduino-Micro.sch');
+	}
     if (!$with_leds) {
         remove_schematic_sheet($kb, "LED_Driver-ISSI.sch");
         remove_schematic_sheet($kb, "LED_Matrix.sch");
