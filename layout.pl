@@ -36,7 +36,7 @@ sub main {
 
     # Which dev board, if any, to provide a socket for
     my $mcu_board = "";
-   
+
     my $output_dir = "";
 
     GetOptions(
@@ -44,13 +44,14 @@ sub main {
         "project=s", \$project_name,
         "with-leds"     => \$with_leds,
         "usb=s"         => \$usb_type,
-	"mcu-board=s"	=> \$mcu_board,
+        "mcu-board=s"   => \$mcu_board,
         "switch=s"      => \$switch_type,
-        "key-spacing=s" => \$key_spacing, 
-	"output-dir=s"	=> \$output_dir
+        "key-spacing=s" => \$key_spacing,
+        "output-dir=s"  => \$output_dir
     );
 
-    die "You need to specify a USB connector style with --usb. Valid options are 'micro' and 'c'\n" if ($usb_type ne 'c-through-hole' && $usb_type ne 'c' && $usb_type ne 'micro');
+    die "You need to specify a USB connector style with --usb. Valid options are 'micro' and 'c'\n"
+        if ($usb_type ne 'c-through-hole' && $usb_type ne 'c' && $usb_type ne 'micro');
 
     die "Project name needs to be defined with --project=" unless ($project_name);
     die "Project name should only contain alphanumerics" if ($project_name =~ qw'/');
@@ -58,20 +59,24 @@ sub main {
     die "Layout needs to be passed in with --layout=filename\nThe layout should be JSON exported by KLE\n"
         unless ($layout_file_name && -f $layout_file_name);
 
-    die "Unknown MCU board '$mcu_board'. Valid values are teensy2 and arduino-micro \n" if ($mcu_board && $mcu_board ne 'teensy2' && $mcu_board ne 'arduino-micro');
+    die "Unknown MCU board '$mcu_board'. Valid values are teensy2 and arduino-micro \n"
+        if ($mcu_board && $mcu_board ne 'teensy2' && $mcu_board ne 'arduino-micro');
 
+    if ($output_dir && !-d $output_dir) {
+        mkdir($output_dir) || die "Unable to create output directory $output_dir. Maybe its parent does not exist or is unwritable" . $@;
+    }
 
-    if ($output_dir && ! -d $output_dir) {
-		mkdir($output_dir) || die "Unable to create output directory $output_dir. Maybe its parent does not exist or is unwritable".$@;
-	}
+    if ($output_dir && (!-d "$output_dir/kicad")) {
+        symlink(Cwd::getcwd() . "/kicad", "$output_dir/kicad");
+    }
 
     my $kb = Keyboard->new(
-        name      => $project_name,
-        json_file => $layout_file_name,
-        output_directory => join("/", ($output_dir? $output_dir : Cwd::getcwd()), $project_name)
+        name             => $project_name,
+        json_file        => $layout_file_name,
+        output_directory => join("/", ($output_dir ? $output_dir : Cwd::getcwd()), $project_name)
     );
 
-    print STDERR "Creating project in ".$kb->output_directory."\n";
+    print STDERR "Creating project in " . $kb->output_directory . "\n";
 
     my $last_col = 0;
     our $x_origin = 0;
@@ -96,7 +101,7 @@ sub main {
         switch_type     => $switch_type,
         usb_type        => $usb_type,
         key_spacing     => $key_spacing,
-	mcu_board	=> $mcu_board
+        mcu_board       => $mcu_board
     );
     my $schematic = Keyboard::Schematic->new(project => $kb, with_leds => $with_leds);
 
@@ -104,12 +109,12 @@ sub main {
     $pcb->init();
 
     if (!$mcu_board || $mcu_board ne 'teensy2') {
-	remove_schematic_sheet($kb, 'MCU-Teensy20.sch');
-	}
+        remove_schematic_sheet($kb, 'MCU-Teensy20.sch');
+    }
 
     if (!$mcu_board || $mcu_board ne 'arduino-micro') {
-	remove_schematic_sheet($kb, 'MCU-Arduino-Micro.sch');
-	}
+        remove_schematic_sheet($kb, 'MCU-Arduino-Micro.sch');
+    }
     if (!$with_leds) {
         remove_schematic_sheet($kb, "LED_Driver-ISSI.sch");
         remove_schematic_sheet($kb, "LED_Matrix.sch");
@@ -282,20 +287,29 @@ sub remove_schematic_sheet {
     unlink($kb->output_directory . "/" . $name);
 
     open(my $data, "<", $kb->toplevel_schematic);
-    my $schematic = join("", <$data>);
-    close($data);
-    my @data = split(/Sheet/, $schematic);
+    my @data    = <$data>;
+    my @newdata = ();
 
     #todo this is criminal, but I was having a bad regex day
-    my @newdata;
-    for my $line (@data) {
-        if ($line !~ /$name/) {
-            push @newdata, $line;
+    while (my $line = shift @data) {
+        chomp($line);
+        if ($line =~ /$name/) {
+            while ($newdata[-1] !~ /Sheet/) {
+                pop @newdata;
+            }
+            pop @newdata;    # Get that Sheet directive
+
+            while ($data[0] !~ /EndSheet/) {
+                shift @data;
+            }
+            shift @data;
+
         } else {
+            push @newdata, $line;
         }
     }
 
-    $schematic = join('Sheet', @newdata);
+    my $schematic = join("\n", @newdata);
 
     open($data, ">", $kb->toplevel_schematic);
     print $data $schematic;
