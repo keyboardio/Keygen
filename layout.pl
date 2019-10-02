@@ -36,6 +36,8 @@ sub main {
 
     # Which dev board, if any, to provide a socket for
     my $mcu_board = "";
+   
+    my $output_dir = "";
 
     GetOptions(
         "layout=s",  \$layout_file_name,
@@ -44,7 +46,8 @@ sub main {
         "usb=s"         => \$usb_type,
 	"mcu-board=s"	=> \$mcu_board,
         "switch=s"      => \$switch_type,
-        "key-spacing=s" => \$key_spacing
+        "key-spacing=s" => \$key_spacing, 
+	"output-dir=s"	=> \$output_dir
     );
 
     die "You need to specify a USB connector style with --usb. Valid options are 'micro' and 'c'\n" if ($usb_type ne 'c-through-hole' && $usb_type ne 'c' && $usb_type ne 'micro');
@@ -57,12 +60,18 @@ sub main {
 
     die "Unknown MCU board '$mcu_board'. Valid values are teensy2 and arduino-micro \n" if ($mcu_board && $mcu_board ne 'teensy2' && $mcu_board ne 'arduino-micro');
 
+
+    if ($output_dir && ! -d $output_dir) {
+		mkdir($output_dir) || die "Unable to create output directory $output_dir. Maybe its parent does not exist or is unwritable".$@;
+	}
+
     my $kb = Keyboard->new(
         name      => $project_name,
         json_file => $layout_file_name,
-
-        output_directory => Cwd::getcwd() . "/" . $project_name
+        output_directory => join("/", ($output_dir? $output_dir : Cwd::getcwd()), $project_name)
     );
+
+    print STDERR "Creating project in ".$kb->output_directory."\n";
 
     my $last_col = 0;
     our $x_origin = 0;
