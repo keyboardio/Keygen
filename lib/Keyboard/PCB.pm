@@ -791,6 +791,8 @@ sub finish {
 	
     if ($self->usb_type eq 'c') {
         $self->insert_predrawn_section('usb-c');
+    } elsif ($self->usb_type eq 'c-through-hole') {
+	$self->insert_predrawn_section('usb-c-gct-usb4085');
     } elsif ($self->usb_type eq 'micro') {
         $self->insert_predrawn_section('usb-micro');
     }

@@ -1,6 +1,6 @@
-update=Date
+update=Wed 02 Oct 2019 11:43:29 AM PDT
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -28,6 +28,4 @@ version=1
 [eeschema]
 version=1
 LibDir=
-[eeschema/libraries]
-LibName1=kicad-template-cache
 

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 5
 LIBS:kicad-template-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 13
 Title ""
 Date "2018-09-05"
 Rev ""
@@ -13,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Sheet
 S 6400 1375 500  150 
@@ -72,4 +77,10 @@ Text Notes 2950 750  0    118  ~ 24
 Microcontroller
 Text Notes 2975 2050 0    118  ~ 24
 MCU Board\nfor homebrew
+$Sheet
+S 925  1800 500  150 
+U 5D950BDF
+F0 "USB C Through-Hole" 50
+F1 "USB-C-Through-Hole.sch" 50
+$EndSheet
 $EndSCHEMATC

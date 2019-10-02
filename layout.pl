@@ -43,7 +43,7 @@ sub main {
         "key-spacing=s" => \$key_spacing
     );
 
-    die "You need to specify a USB connector style with --usb. Valid options are 'micro' and 'c'\n" if ($usb_type ne 'c' && $usb_type ne 'micro');
+    die "You need to specify a USB connector style with --usb. Valid options are 'micro' and 'c'\n" if ($usb_type ne 'c-through-hole' && $usb_type ne 'c' && $usb_type ne 'micro');
 
     die "Project name needs to be defined with --project=" unless ($project_name);
     die "Project name should only contain alphanumerics" if ($project_name =~ qw'/');
@@ -90,6 +90,9 @@ sub main {
     if (!$with_leds) {
         remove_schematic_sheet($kb, "LED_Driver-ISSI.sch");
         remove_schematic_sheet($kb, "LED_Matrix.sch");
+    }
+    if ($usb_type ne 'c-through-hole') {
+        remove_schematic_sheet($kb, "USB-C-Through-Hole.sch");
     }
     if ($usb_type ne 'c') {
         remove_schematic_sheet($kb, "USB-C.sch");

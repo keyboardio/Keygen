@@ -1,10 +1,10 @@
 EESchema Schematic File Version 5
 LIBS:kicad-template-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 11
+Sheet 5 13
 Title ""
 Date "2016-05-06"
 Rev ""
@@ -13,11 +13,18 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5CA6F860
 P 1850 2800
+AR Path="/5B90A59F/5CA6F860" Ref="#FLG?"  Part="1" 
+AR Path="/5D950BDF/5CA6F860" Ref="#FLG?"  Part="1" 
 F 0 "#FLG?" H 1850 2895 50  0001 C CNN
 F 1 "PWR_FLAG" V 1850 3100 50  0000 C CNN
 F 2 "" H 1850 2800 60  0000 C CNN
@@ -29,7 +36,9 @@ $Comp
 L Device:R R7
 U 1 1 5B5FAE80
 P 3900 5350
-F 0 "R7" V 3980 5350 40  0000 C CNN
+AR Path="/5B90A59F/5B5FAE80" Ref="R7"  Part="1" 
+AR Path="/5D950BDF/5B5FAE80" Ref="R?"  Part="1" 
+F 0 "R?" V 3980 5350 40  0000 C CNN
 F 1 "5.1K" V 3907 5351 40  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 5350 30  0001 C CNN
 F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 3900 5350 30  0001 C CNN
@@ -100,7 +109,9 @@ $Comp
 L Device:R R6
 U 1 1 5B5FB101
 P 3900 5100
-F 0 "R6" V 3980 5100 40  0000 C CNN
+AR Path="/5B90A59F/5B5FB101" Ref="R6"  Part="1" 
+AR Path="/5D950BDF/5B5FB101" Ref="R?"  Part="1" 
+F 0 "R?" V 3980 5100 40  0000 C CNN
 F 1 "5.1K" V 3907 5101 40  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 5100 30  0001 C CNN
 F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 3900 5100 30  0001 C CNN
@@ -126,7 +137,9 @@ $Comp
 L Keyboard-symbols:USB_C_Receptacle-usb_c_receptacle USB1
 U 1 1 5B5FB0C4
 P 3750 2900
-F 0 "USB1" V 3809 4329 50  0000 L CNN
+AR Path="/5B90A59F/5B5FB0C4" Ref="USB1"  Part="1" 
+AR Path="/5D950BDF/5B5FB0C4" Ref="USB?"  Part="1" 
+F 0 "USB?" V 3809 4329 50  0000 L CNN
 F 1 "USB_C_Receptacle" V 3900 4329 50  0000 L CNN
 F 2 "Keyboardio:USB-TYPE-C-MIDMOUNT" H 3900 2900 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 3900 2900 50  0001 C CNN
@@ -181,6 +194,8 @@ $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5CA6F862
 P 5175 3550
+AR Path="/5B90A59F/5CA6F862" Ref="#FLG?"  Part="1" 
+AR Path="/5D950BDF/5CA6F862" Ref="#FLG?"  Part="1" 
 F 0 "#FLG?" H 5175 3625 50  0001 C CNN
 F 1 "PWR_FLAG" H 5175 3723 50  0000 C CNN
 F 2 "" H 5175 3550 50  0001 C CNN
@@ -236,7 +251,8 @@ AR Path="/5B90A59E/5CA5B11A/5CA6A217" Ref="D?"  Part="1"
 AR Path="/5B90A59F/5CA5B290/5CA6A217" Ref="D?"  Part="1" 
 AR Path="/5B90A59E/5CA6A217" Ref="D?"  Part="1" 
 AR Path="/5B90A59F/5CA6A217" Ref="ESD1"  Part="1" 
-F 0 "ESD1" H 2416 5071 50  0000 L CNN
+AR Path="/5D950BDF/5CA6A217" Ref="D?"  Part="1" 
+F 0 "D?" H 2416 5071 50  0000 L CNN
 F 1 "PRTR5V0U2X" H 2050 4625 50  0000 L CNN
 F 2 "Keyboardio:PRTR5V0U2X" H 1935 5025 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 1935 5025 50  0001 C CNN

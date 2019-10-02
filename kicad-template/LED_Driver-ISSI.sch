@@ -1,10 +1,10 @@
 EESchema Schematic File Version 5
 LIBS:kicad-template-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 11
+Sheet 6 13
 Title ""
 Date ""
 Rev ""
@@ -13,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Wire Wire Line
 	2350 2900 2350 2300
