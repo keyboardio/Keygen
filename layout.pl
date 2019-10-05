@@ -50,7 +50,7 @@ sub main {
         "output-dir=s"  => \$output_dir
     );
 
-    die "You need to specify a USB connector style with --usb. Valid options are 'micro' and 'c'\n"
+    die "You need to specify a USB connector style with --usb. Valid options are 'micro', 'c-through-hole', and 'c'\n"
         if ($usb_type ne 'c-through-hole' && $usb_type ne 'c' && $usb_type ne 'micro');
 
     die "Project name needs to be defined with --project=" unless ($project_name);
