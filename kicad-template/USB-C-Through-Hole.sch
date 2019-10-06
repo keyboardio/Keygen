@@ -267,15 +267,15 @@ Wire Wire Line
 Wire Wire Line
 	1875 4525 1875 4450
 $Comp
-L Keyboard-symbols:Power_Protection_PRTR5V0U2X-prtr5v0u2x D?
+L Keyboard-symbols:Power_Protection_PRTR5V0U2X-prtr5v0u2x ESD1
 U 1 1 5CA6A217
 P 1875 5025
-AR Path="/5CA54797/5CA6A217" Ref="D?"  Part="1" 
-AR Path="/5B90A59E/5CA5B11A/5CA6A217" Ref="D?"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5CA6A217" Ref="D?"  Part="1" 
-AR Path="/5B90A59E/5CA6A217" Ref="D?"  Part="1" 
+AR Path="/5CA54797/5CA6A217" Ref="ESD1"  Part="1" 
+AR Path="/5B90A59E/5CA5B11A/5CA6A217" Ref="ESD1"  Part="1" 
+AR Path="/5B90A59F/5CA5B290/5CA6A217" Ref="ESD1"  Part="1" 
+AR Path="/5B90A59E/5CA6A217" Ref="ESD1"  Part="1" 
 AR Path="/5B90A59F/5CA6A217" Ref="ESD1"  Part="1" 
-AR Path="/5CA6A217" Ref="ESD?"  Part="1" 
+AR Path="/5CA6A217" Ref="ESD1"  Part="1" 
 AR Path="/5D950BDF/5CA6A217" Ref="ESD1"  Part="1" 
 F 0 "ESD1" H 2416 5071 50  0000 L CNN
 F 1 "PRTR5V0U2X" H 2050 4625 50  0000 L CNN
