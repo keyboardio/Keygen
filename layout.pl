@@ -39,12 +39,15 @@ sub main {
 
     my $output_dir = "";
 
+    my $mcu = "atmega32u4";
+
     GetOptions(
         "layout=s",  \$layout_file_name,
         "project=s", \$project_name,
         "with-leds"     => \$with_leds,
         "usb=s"         => \$usb_type,
         "mcu-board=s"   => \$mcu_board,
+	"mcu=s"		=> \$mcu,
         "switch=s"      => \$switch_type,
         "key-spacing=s" => \$key_spacing,
         "output-dir=s"  => \$output_dir
@@ -101,7 +104,8 @@ sub main {
         switch_type     => $switch_type,
         usb_type        => $usb_type,
         key_spacing     => $key_spacing,
-        mcu_board       => $mcu_board
+        mcu_board       => $mcu_board,
+	mcu 		=> $mcu
     );
     my $schematic = Keyboard::Schematic->new(project => $kb, with_leds => $with_leds);
 

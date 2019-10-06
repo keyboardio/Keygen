@@ -28,6 +28,7 @@ has key_spacing => (is => 'rw', isa => 'Num', default => 19.05);
 
 has with_leds => (is => 'rw', isa => 'Bool', default => 0);
 has mcu_board => (is => 'rw', isa => 'Str', default => '');
+has mcu => (is => 'rw', isa => 'Str', default => '');
 
 has usb_type => (is => 'rw', isa => 'Str', default => 'c');
 has top_edge    => (is => 'rw', isa => 'Num', default => -1);
@@ -787,8 +788,12 @@ sub finish {
     if ($self->with_leds) {
         $self->insert_predrawn_section('issi-led');
     }
-    $self->insert_predrawn_section('atmega32u4');
 
+    if($self->mcu eq 'atmega32u4') {
+    	$self->insert_predrawn_section('atmega32u4');
+    } elsif ($self->mcu eq 'atmega32u4mu') {
+    	$self->insert_predrawn_section('atmega32u4mu');
+    }
 	
     if ($self->usb_type eq 'c') {
         $self->insert_predrawn_section('usb-c');
