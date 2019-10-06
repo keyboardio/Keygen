@@ -97,7 +97,7 @@ sub main {
         project         => $kb,
         with_leds       => $with_leds,
         x_origin_offset => 0,
-        y_origin_offset => 42,
+        y_origin_offset => 62,
         switch_type     => $switch_type,
         usb_type        => $usb_type,
         key_spacing     => $key_spacing,

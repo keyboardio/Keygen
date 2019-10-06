@@ -37,12 +37,13 @@ P 3900 5350
 F 0 "R7" V 3980 5350 40  0000 C CNN
 F 1 "5.1K" V 3907 5351 40  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 5350 30  0001 C CNN
-F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 3900 5350 30  0001 C CNN
-F 4 "RR0816P-512-D" V 3900 5350 50  0001 C CNN "MPN"
+F 3 "" H 3900 5350 30  0001 C CNN
+F 4 "RT0603BRD075K1L" V 3900 5350 50  0001 C CNN "MPN"
 F 5 "RES SMD 5.1K OHM 0.5% 1/16W 0603" H -5700 275 50  0001 C CNN "Description"
-F 6 "RR08P5.1KDTR-ND" H -5700 275 50  0001 C CNN "DigiKey"
-F 7 "Susumu" H -5700 275 50  0001 C CNN "Manufacturer"
+F 6 "" H -5700 275 50  0001 C CNN "DigiKey"
+F 7 "Yaego" H -5700 275 50  0001 C CNN "Manufacturer"
 F 8 "RT0603BRD075K1L	" H 0   0   50  0001 C CNN "Seeed Part Num"
+F 9 "C122969" V 3900 5350 50  0001 C CNN "LCSC"
 	1    3900 5350
 	0    -1   -1   0   
 $EndComp
@@ -108,12 +109,13 @@ P 3900 5100
 F 0 "R6" V 3980 5100 40  0000 C CNN
 F 1 "5.1K" V 3907 5101 40  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 5100 30  0001 C CNN
-F 3 "http://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf" H 3900 5100 30  0001 C CNN
-F 4 "RR0816P-512-D" V 3900 5100 50  0001 C CNN "MPN"
+F 3 "" H 3900 5100 30  0001 C CNN
+F 4 "RT0603BRD075K1L" V 3900 5100 50  0001 C CNN "MPN"
 F 5 "RES SMD 5.1K OHM 0.5% 1/16W 0603" H -5450 25  50  0001 C CNN "Description"
 F 6 "RR08P5.1KDTR-ND" H -5450 25  50  0001 C CNN "DigiKey"
-F 7 "Susumu" H -5450 25  50  0001 C CNN "Manufacturer"
+F 7 "Yaego" H -5450 25  50  0001 C CNN "Manufacturer"
 F 8 "RT0603BRD075K1L	" H 0   0   50  0001 C CNN "Seeed Part Num"
+F 9 "C122969" V 3900 5100 50  0001 C CNN "LCSC"
 	1    3900 5100
 	0    -1   -1   0   
 $EndComp
@@ -284,6 +286,7 @@ F 5 "TVS DIODE 5.5V SOT143B" H -2925 -125 50  0001 C CNN "Description"
 F 6 "1727-3884-2-ND" H -2925 -125 50  0001 C CNN "DigiKey"
 F 7 "Nexperia" H -2925 -125 50  0001 C CNN "Manufacturer"
 F 8 "PRTR5V0U2X,215	" H 0   0   50  0001 C CNN "Seeed Part Num"
+F 9 "C12333" H 1875 5025 50  0001 C CNN "LCSC"
 	1    1875 5025
 	1    0    0    -1  
 $EndComp
