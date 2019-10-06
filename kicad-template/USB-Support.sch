@@ -20,10 +20,10 @@ Comment8 ""
 Comment9 ""
 $EndDescr
 $Comp
-L Device:L L?
+L Device:L L1
 U 1 1 54E4D3C3
 P 2100 5000
-AR Path="/5CA54797/54E4D3C3" Ref="L?"  Part="1" 
+AR Path="/5CA54797/54E4D3C3" Ref="L1"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/54E4D3C3" Ref="L1"  Part="1" 
 AR Path="/5B90A59F/5CA5B290/54E4D3C3" Ref="L1"  Part="1" 
 AR Path="/5CA5B290/54E4D3C3" Ref="L1"  Part="1" 
@@ -42,12 +42,12 @@ F 9 "C88995" V 2100 5000 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 562906B3
 P 7025 4575
-AR Path="/5CA54797/562906B3" Ref="R?"  Part="1" 
+AR Path="/5CA54797/562906B3" Ref="R4"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/562906B3" Ref="R4"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/562906B3" Ref="R53"  Part="1" 
+AR Path="/5B90A59F/5CA5B290/562906B3" Ref="R4"  Part="1" 
 AR Path="/5CA5B290/562906B3" Ref="R4"  Part="1" 
 AR Path="/5D950BDF/5CA5B290/562906B3" Ref="R4"  Part="1" 
 F 0 "R4" V 6950 4525 40  0000 C CNN
@@ -64,12 +64,12 @@ F 9 "C107701" V 7025 4575 50  0001 C CNN "LCSC"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 56290BF3
 P 7050 5200
-AR Path="/5CA54797/56290BF3" Ref="R?"  Part="1" 
+AR Path="/5CA54797/56290BF3" Ref="R5"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/56290BF3" Ref="R5"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/56290BF3" Ref="R54"  Part="1" 
+AR Path="/5B90A59F/5CA5B290/56290BF3" Ref="R5"  Part="1" 
 AR Path="/5CA5B290/56290BF3" Ref="R5"  Part="1" 
 AR Path="/5D950BDF/5CA5B290/56290BF3" Ref="R5"  Part="1" 
 F 0 "R5" V 6950 5150 40  0000 C CNN
@@ -134,10 +134,10 @@ F 3 "" H 3300 4750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C10
 U 1 1 5BAC53C8
 P 2450 5150
-AR Path="/5CA54797/5BAC53C8" Ref="C?"  Part="1" 
+AR Path="/5CA54797/5BAC53C8" Ref="C10"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/5BAC53C8" Ref="C10"  Part="1" 
 AR Path="/5B90A59F/5CA5B290/5BAC53C8" Ref="C10"  Part="1" 
 AR Path="/5CA5B290/5BAC53C8" Ref="C10"  Part="1" 
@@ -156,10 +156,10 @@ F 9 "C277499" H 2450 5150 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C9
 U 1 1 568002EA
 P 1750 5150
-AR Path="/5CA54797/568002EA" Ref="C?"  Part="1" 
+AR Path="/5CA54797/568002EA" Ref="C9"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/568002EA" Ref="C9"  Part="1" 
 AR Path="/5B90A59F/5CA5B290/568002EA" Ref="C9"  Part="1" 
 AR Path="/5CA5B290/568002EA" Ref="C9"  Part="1" 
@@ -194,12 +194,12 @@ R_D-
 Wire Wire Line
 	4125 6400 4125 6350
 $Comp
-L Device:C_Small C?
+L Device:C_Small C13
 U 1 1 5FD0B112
 P 6750 5300
-AR Path="/5CA54797/5FD0B112" Ref="C?"  Part="1" 
+AR Path="/5CA54797/5FD0B112" Ref="C13"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/5FD0B112" Ref="C13"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5FD0B112" Ref="C23"  Part="1" 
+AR Path="/5B90A59F/5CA5B290/5FD0B112" Ref="C13"  Part="1" 
 AR Path="/5CA5B290/5FD0B112" Ref="C13"  Part="1" 
 AR Path="/5D950BDF/5CA5B290/5FD0B112" Ref="C13"  Part="1" 
 F 0 "C13" H 6775 5225 40  0000 L CNN
@@ -289,12 +289,12 @@ Wire Wire Line
 Wire Wire Line
 	3825 6350 3825 6400
 $Comp
-L Device:C_Small C?
+L Device:C_Small C11
 U 1 1 5BAC53C6
 P 3825 6500
-AR Path="/5CA54797/5BAC53C6" Ref="C?"  Part="1" 
+AR Path="/5CA54797/5BAC53C6" Ref="C11"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/5BAC53C6" Ref="C11"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5BAC53C6" Ref="C21"  Part="1" 
+AR Path="/5B90A59F/5CA5B290/5BAC53C6" Ref="C11"  Part="1" 
 AR Path="/5CA5B290/5BAC53C6" Ref="C11"  Part="1" 
 AR Path="/5D950BDF/5CA5B290/5BAC53C6" Ref="C11"  Part="1" 
 F 0 "C11" H 3825 6400 50  0000 L CNN
@@ -311,12 +311,12 @@ F 9 "C107135" H 3825 6500 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 5BAC53C5
 P 4125 6550
-AR Path="/5CA54797/5BAC53C5" Ref="R?"  Part="1" 
+AR Path="/5CA54797/5BAC53C5" Ref="R3"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/5BAC53C5" Ref="R3"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5BAC53C5" Ref="R52"  Part="1" 
+AR Path="/5B90A59F/5CA5B290/5BAC53C5" Ref="R3"  Part="1" 
 AR Path="/5CA5B290/5BAC53C5" Ref="R3"  Part="1" 
 AR Path="/5D950BDF/5CA5B290/5BAC53C5" Ref="R3"  Part="1" 
 F 0 "R3" H 4075 6400 40  0000 C CNN
@@ -333,12 +333,12 @@ F 9 "C131054" H 4125 6550 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C12
 U 1 1 6265BA6E
 P 6750 4675
-AR Path="/5CA54797/6265BA6E" Ref="C?"  Part="1" 
+AR Path="/5CA54797/6265BA6E" Ref="C12"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/6265BA6E" Ref="C12"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/6265BA6E" Ref="C22"  Part="1" 
+AR Path="/5B90A59F/5CA5B290/6265BA6E" Ref="C12"  Part="1" 
 AR Path="/5CA5B290/6265BA6E" Ref="C12"  Part="1" 
 AR Path="/5D950BDF/5CA5B290/6265BA6E" Ref="C12"  Part="1" 
 F 0 "C12" H 6775 4575 40  0000 L CNN
@@ -361,10 +361,10 @@ Wire Wire Line
 Text Notes 1375 5650 0    50   ~ 0
 USB Over-voltage protection
 $Comp
-L Device:Varistor RV?
+L Device:Varistor RV1
 U 1 1 5C88182E
 P 2125 6125
-AR Path="/5CA54797/5C88182E" Ref="RV?"  Part="1" 
+AR Path="/5CA54797/5C88182E" Ref="RV1"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/5C88182E" Ref="RV1"  Part="1" 
 AR Path="/5B90A59F/5CA5B290/5C88182E" Ref="RV1"  Part="1" 
 AR Path="/5CA5B290/5C88182E" Ref="RV1"  Part="1" 
@@ -382,10 +382,10 @@ F 8 "C118414" V 2125 6125 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Varistor RV?
+L Device:Varistor RV2
 U 1 1 5C8898BA
 P 2125 6600
-AR Path="/5CA54797/5C8898BA" Ref="RV?"  Part="1" 
+AR Path="/5CA54797/5C8898BA" Ref="RV2"  Part="1" 
 AR Path="/5B90A59E/5CA5B11A/5C8898BA" Ref="RV2"  Part="1" 
 AR Path="/5B90A59F/5CA5B290/5C8898BA" Ref="RV2"  Part="1" 
 AR Path="/5CA5B290/5C8898BA" Ref="RV2"  Part="1" 
