@@ -159,6 +159,8 @@ sub main {
 
         if (ref($row) ne 'ARRAY') {
             warn "Got some unknown data";
+	    	use Data::Dumper;
+			print scalar Dumper($row);
             next;
 
         }
@@ -207,8 +209,8 @@ sub main {
                     x               => $x + $x_offset,
                     y               => $y + $y_offset,
                     reference       => sprintf("SW_%d", $i),
-                    diode_reference => sprintf("D_%d", $i),
-                    led_reference   => sprintf("LED_%d", $i),
+                    diode_reference => sprintf("D_SW_%d", $i),
+                    led_reference   => sprintf("LED_SW_%d", $i),
                     timestamp       => $timestamp + (3 * $i),
                     rotation        => $rotation
                 );

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:kicad-template-cache
 EELAYER 30 0
 EELAYER END
@@ -13,11 +13,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L power:PWR_FLAG #FLG?
@@ -110,13 +105,9 @@ USBGND
 Text Notes 6725 2650 0    60   ~ 0
 USB ESD Protection
 $Comp
-L Keyboard-symbols:Power_Protection_PRTR5V0U2X-prtr5v0u2x D?
+L Keyboard-symbols:Power_Protection_PRTR5V0U2X-prtr5v0u2x ESD1
 U 1 1 5CAAB6BE
 P 7100 3475
-AR Path="/5CA54797/5CAAB6BE" Ref="D?"  Part="1" 
-AR Path="/5B90A59E/5CA5B11A/5CAAB6BE" Ref="D?"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5CAAB6BE" Ref="D?"  Part="1" 
-AR Path="/5B90A59E/5CAAB6BE" Ref="ESD1"  Part="1" 
 F 0 "ESD1" H 7641 3521 50  0000 L CNN
 F 1 "PRTR5V0U2X" H 7275 3075 50  0000 L CNN
 F 2 "Keyboardio:PRTR5V0U2X" H 7160 3475 50  0001 C CNN
@@ -140,10 +131,6 @@ $Comp
 L power:GND #PWR?
 U 1 1 5CAAB6C7
 P 7100 4200
-AR Path="/5CA54797/5CAAB6C7" Ref="#PWR?"  Part="1" 
-AR Path="/5B90A59E/5CA5B11A/5CAAB6C7" Ref="#PWR?"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5CAAB6C7" Ref="#PWR?"  Part="1" 
-AR Path="/5B90A59E/5CAAB6C7" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7100 4200 30  0001 C CNN
 F 1 "VSS" H 7100 4130 30  0000 C CNN
 F 2 "" H 7100 4200 60  0000 C CNN

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:kicad-template-cache
 EELAYER 30 0
 EELAYER END
@@ -13,11 +13,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L power:PWR_FLAG #FLG?
@@ -233,9 +228,9 @@ Wire Wire Line
 Text Label 1850 3000 2    50   ~ 0
 USBGND
 Text GLabel 2675 5025 2    50   Input ~ 0
-USB_D+
-Text GLabel 1350 5025 0    50   Input ~ 0
 USB_D-
+Text GLabel 1350 5025 0    50   Input ~ 0
+USB_D+
 Text Notes 7525 2050 0    197  ~ 39
 USB Support Circuitry
 Text GLabel 1875 4450 0    50   Input ~ 0
@@ -244,13 +239,6 @@ $Comp
 L power:GND #PWR?
 U 1 1 5CA6A220
 P 1875 5750
-AR Path="/5CA54797/5CA6A220" Ref="#PWR?"  Part="1" 
-AR Path="/5B90A59E/5CA5B11A/5CA6A220" Ref="#PWR?"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5CA6A220" Ref="#PWR?"  Part="1" 
-AR Path="/5B90A59E/5CA6A220" Ref="#PWR?"  Part="1" 
-AR Path="/5B90A59F/5CA6A220" Ref="#PWR?"  Part="1" 
-AR Path="/5CA6A220" Ref="#PWR?"  Part="1" 
-AR Path="/5D950BDF/5CA6A220" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1875 5750 30  0001 C CNN
 F 1 "VSS" H 1875 5680 30  0000 C CNN
 F 2 "" H 1875 5750 60  0000 C CNN
@@ -270,13 +258,6 @@ $Comp
 L Keyboard-symbols:Power_Protection_PRTR5V0U2X-prtr5v0u2x ESD1
 U 1 1 5CA6A217
 P 1875 5025
-AR Path="/5CA54797/5CA6A217" Ref="ESD1"  Part="1" 
-AR Path="/5B90A59E/5CA5B11A/5CA6A217" Ref="ESD1"  Part="1" 
-AR Path="/5B90A59F/5CA5B290/5CA6A217" Ref="ESD1"  Part="1" 
-AR Path="/5B90A59E/5CA6A217" Ref="ESD1"  Part="1" 
-AR Path="/5B90A59F/5CA6A217" Ref="ESD1"  Part="1" 
-AR Path="/5CA6A217" Ref="ESD1"  Part="1" 
-AR Path="/5D950BDF/5CA6A217" Ref="ESD1"  Part="1" 
 F 0 "ESD1" H 2416 5071 50  0000 L CNN
 F 1 "PRTR5V0U2X" H 2050 4625 50  0000 L CNN
 F 2 "Keyboardio:PRTR5V0U2X" H 1935 5025 50  0001 C CNN
