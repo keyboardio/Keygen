@@ -168,6 +168,11 @@ sub add {
 
     );
 
+
+
+    $self->add_via(position => Point->new(x => $switch->x+2, y=> $switch->y+2));
+
+
     $self->place_footprint($switch);
 
     $self->update_bounds($switch->x, $switch->y);
