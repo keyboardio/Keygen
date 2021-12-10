@@ -1,0 +1,1 @@
+rm -rf spacecadet; ./layout.pl --usb=c --project=spacecadet --with-leds --layout=kle-layouts/spacecadet.json; 
